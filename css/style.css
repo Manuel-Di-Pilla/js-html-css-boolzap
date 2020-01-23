@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
 }
+/* template{
+  display: none;
+} */
 .background{
   position: relative;
 }
@@ -168,7 +171,7 @@
   margin-left: 20px;
 }
 .list li .cantact-info h4{
-  margin-top: 6px;
+  margin-top: 9px;
 }
 .list li .cantact-info p{
   margin-top: 5px;
@@ -224,8 +227,93 @@
   margin-right: 20px;
   vertical-align: middle;
 }
+.height{
+  height: 40px;
+  width: 100%;
+}
 .live-chat{
   background-image: url(../img/sfondo.jpeg);
   height: calc(100% - 120px);
   width: 98%;
+  overflow: auto;
+}
+.text.me{
+  background-color: #D0F8B6;
+  height: 55px;
+  width: 150px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  margin-left: 550px;
+}
+.text.me p{
+  margin-left: 20px;
+}
+.text.me .arrow{
+  color: lightgrey;
+  margin-left: 120px;
+}
+.text.me .arrow i{
+  visibility: hidden;
+}
+.text.me:hover .arrow i{
+  visibility: visible;
+}
+.live-chat .text.your{
+  height: 55px;
+  width: 150px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+  margin-left: 20px;
+}
+.live-chat .text.your p{
+  margin-left: 20px;
+}
+.live-chat .text.your .arrow{
+  color: lightgrey;
+  margin-left: 120px;
+}
+.live-chat .text.your .arrow i{
+  visibility: hidden;
+}
+.live-chat .text.your:hover .arrow i{
+  visibility: visible;
+}
+.input-key{
+  background-color: #F1EBE7;
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+.input-key .emoticon{
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-key .emoticon i{
+  color: #60686A;
+  font-size: 25px;
+}
+.input-key .input-message{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-key .input-message input{
+  width: 100%;
+  height: 40px;
+  border: 0;
+  font-size: 15px;
+}
+.input-key .send{
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-key .send i{
+  color: #60686A;
+  font-size: 25px;
 }
