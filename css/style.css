@@ -3,6 +3,12 @@
   padding: 0;
   margin: 0;
 }
+.template{
+  display: none;
+}
+.none{
+  display: none;
+}
 .general-container{
   background-color: #D2D6D1;
   width: 100%;
@@ -23,6 +29,10 @@
 .right-side{
   height: 100%;
   width: 60%;
+  display: none;
+}
+.active{
+  display: block;
 }
 .info-user{
   height: 70px;
@@ -181,42 +191,72 @@
   height: 40px;
 }
 .my-message {
-  height: 10%;
-  width: 20%;
   border-radius: 5px;
   background-color: #CFF7B5;
   float: right;
   clear: both;
   margin-bottom: 20px;
   margin-right: 40px;
+  position: relative;
+}
+.delete-message{
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  height: 50px;
+  width: 145px;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.18);
+}
+.show{
+  display: block;
+}
+.delete-message li{
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  text-align: center;
 }
 .icon-arrow{
-  height: 30%;
   display: flex;
+  height: 30%;
   justify-content: flex-end;
 }
 .icon-arrow i{
-  margin-right: 5px;
   color: #ABABAB;
   visibility: hidden;
+  margin-right: 10px;
 }
 .my-message:hover .icon-arrow i{
   visibility: visible;
 }
 .text-message{
-  height: 70%;
+  height: 40%;
   display: flex;
   justify-content: center;
+  padding: 0 20px;
+}
+.show-hour{
+  height: 30%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 10px;
+}
+.show-hour p{
+  color: #ABABAB;
+  margin-top: 2px;
+  margin-right: 3px;
 }
 .his-message{
-  height: 10%;
-  width: 20%;
   border-radius: 5px;
   background-color: white;
   float: left;
   clear: both;
   margin-bottom: 20px;
   margin-left: 30px;
+  position: relative;
 }
 .his-message:hover .icon-arrow i{
   visibility: visible;
