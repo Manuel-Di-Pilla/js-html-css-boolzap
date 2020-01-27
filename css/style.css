@@ -31,9 +31,6 @@
   width: 60%;
   display: none;
 }
-.active{
-  display: block;
-}
 .info-user{
   height: 70px;
   width: 100%;
@@ -210,9 +207,6 @@
   z-index: 1;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.18);
 }
-.show{
-  display: block;
-}
 .delete-message li{
   list-style-type: none;
   margin-bottom: 10px;
@@ -299,4 +293,10 @@
   align-items: center;
   font-size: 25px;
   color: #60686A;
+}
+.none{
+  display: none
+}
+.active{
+  display: block;
 }
