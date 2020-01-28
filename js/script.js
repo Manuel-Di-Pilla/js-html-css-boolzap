@@ -5,7 +5,7 @@ $(document).ready(
         sendMessage();
       }
     );
-    $(document).keydown(
+    $('.input-text').keydown(
       function () {
         if (event.keyCode == 13) {
           sendMessage();
@@ -25,16 +25,17 @@ $(document).ready(
         contattoChat.addClass('active');
       }
     );
-    $('.icon-arrow').on('click', function () {
+    $(document).on('click', '.icon-arrow', function () {
       $(this).children().toggleClass('active');
-    });
-    $('.delete').click(function () {
+    })
+    $(document).on('click', '.delete', function () {
       $(this).parents('.my-message').remove();
-    });
-    $('.delete').click(function () {
+    })
+    $(document).on('click', '.delete', function () {
       $(this).parents('.his-message').remove();
-    });
-    $('.right-side.active .input-text').focus(function() {
+    })
+
+    $('.input-text').focus(function() {
       $('.fa-microphone').removeClass('fa-microphone').addClass('fa-paper-plane');
     }).blur(function () {
       $('.fa-paper-plane').removeClass('fa-paper-plane').addClass('fa-microphone');
