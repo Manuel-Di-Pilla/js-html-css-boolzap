@@ -201,7 +201,6 @@
   position: absolute;
   top: 48px;
   left: 0;
-  height: 50px;
   width: 145px;
   background-color: white;
   z-index: 1;
@@ -209,9 +208,12 @@
 }
 .delete-message li{
   list-style-type: none;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  padding: 5px;
   text-align: center;
+  cursor: pointer;
+}
+.delete-message li:hover{
+  background-color: lightgrey;
 }
 .icon-arrow{
   display: flex;

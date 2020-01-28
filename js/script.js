@@ -26,22 +26,18 @@ $(document).ready(
       }
     );
     $('.icon-arrow').on('click', function () {
-      $(this).children().addClass('active');
-      $('body').dblclick(
-        function () {
-          $('.delete-message').removeClass('active');
-        }
-      )
-      $('.delete-message ul li').eq(1).click(
-        function () {
-          $(this).parents('.my-message').remove();
-        }
-      );
-      $('.delete-message ul li').eq(1).click(
-        function () {
-          $(this).parents('.his-message').remove();
-        }
-      );
+      $(this).children().toggleClass('active');
+    });
+    $('.delete').click(function () {
+      $(this).parents('.my-message').remove();
+    });
+    $('.delete').click(function () {
+      $(this).parents('.his-message').remove();
+    });
+    $('.right-side.active .input-text').focus(function() {
+      $('.fa-microphone').removeClass('fa-microphone').addClass('fa-paper-plane');
+    }).blur(function () {
+      $('.fa-paper-plane').removeClass('fa-paper-plane').addClass('fa-microphone');
     })
   }
 )
